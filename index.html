@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 6 — The Birthday Party</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<header class="top">
+  <div><p class="eyebrow">AITU • jQuery practice</p><h1>The Birthday Party</h1><p>Selector Detective & The Party in Motion</p></div>
+  <div class="legend"><span>● AITU student</span><span>Phone · Glasses · Bag · Cup · Cake crumbs</span></div>
+</header>
+<main>
+  <section class="toolbar"><h2>Investigation cases</h2><button id="clear">Clear spotlight</button></section>
+  <section id="cases" class="cases"></section>
+  <div id="result" class="result" aria-live="polite">Choose a case to inspect the party.</div>
+  <section id="house" class="house">
+    <div class="floor"><h2>Floor 2</h2><div class="room" data-room="Balcony"><div class="room-head"><h3>Balcony</h3><button class="sort">Sort by time</button></div><div class="guests"></div></div>
+      <div class="room" data-room="Hall"><div class="room-head"><h3>Hall</h3><button class="sort">Sort by time</button></div><div class="guests"></div></div></div>
+    <div class="floor"><h2>Floor 1</h2><div class="room" data-room="Kitchen"><div class="room-head"><h3>Kitchen</h3><button class="sort">Sort by time</button></div><div class="guests"></div></div>
+      <div class="room" data-room="Living room"><div class="room-head"><h3>Living room</h3><button class="sort">Sort by time</button></div><div class="guests"></div></div></div>
+  </section>
+  <p class="note">Guest data is represented in JavaScript and copied to each card as classes and data-* attributes. Click a guest to open their information card.</p>
+</main>
+<div class="modal-backdrop" id="backdrop"><article class="modal" id="guestModal"><button class="close" aria-label="Close">×</button><div class="modal-content"></div></article></div>
+<script src="script.js"></script>
+</body></html>
